@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    font-family: 'Open Sans', sans-serif;;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .primary-text{
@@ -25,8 +26,6 @@
     background-image:url("./images/header_bg.png"), url("./images/developer.png");
     background-position: bottom right, left ;
     background-repeat: no-repeat;
-    background-size: ;
-
 }
 
 .banner img{
@@ -239,6 +238,7 @@ font-weight: 700;
 .a .img{
 
 }
+
 .a{
     padding: 80px;
 }
@@ -258,4 +258,66 @@ font-weight: 700;
 
 .connect a{
     text-decoration: none;
+}
+
+@media screen and (max-width:576px) {
+
+    nav {
+        flex-direction: column;
+        margin: 10px 30px;
+    }
+
+}
+.banner {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .skill-container {
+        gap: 24px;
+        padding: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .resume-content {
+        gap: 15px;
+        padding: 50px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button .btn-primary {
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    .about-info-container {
+    
+        justify-content: space-around;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .about {
+        margin: 10px 20px;
+        padding: 0;
+    }
+
+    .connect {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .what-i-do {
+        margin: 50px 50px;
+    
+    }
 }
